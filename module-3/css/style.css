@@ -1,0 +1,76 @@
+body {
+padding: 0;
+margin: 0;
+}
+/*___profile____*/
+
+img {
+    width: 407px;
+    height: 98px;
+}
+
+
+/*___principles_____*/
+
+#principles {
+padding: 0px 30px;
+width: 331px;
+}
+
+#principles p {
+  font-size:12px;
+}
+.principles h2 {
+  margin-top: 35px;
+}
+
+
+/*___offer____*/
+
+.offer h2 {
+  margin-top: 70px;
+}
+
+/*___list____*/
+
+ul {
+  list-style-image: url(../img/layer83.png);
+}
+
+.a, .b {
+  max-width: 204px;
+  padding: 1px;
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: top;
+}
+.list {
+  display: block;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.profile, .principles, .offer {
+  max-width: 407px;
+  padding: 1px;
+  margin: 10px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+}
