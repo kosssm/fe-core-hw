@@ -30,11 +30,11 @@ nav ul li a:hover{
     color: black;
 }
 
-nav ul li a {
+/* ___________________TOPMENU________________________ */
+
+ul.topmenu > li > a {
     color: white;
 }
-
-/* ___________________TOPMENU________________________ */
 
 
 nav ul.topmenu {
