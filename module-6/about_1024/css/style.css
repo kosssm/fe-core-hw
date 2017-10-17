@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+    background-image: url(../img/Layer57.png);
+    /* background-size: auto; */
+    box-sizing: border-box;
+    /* background-repeat: repeat; */
+    background: cover;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* _________________________TOPMENU_________________________ */
+
+header nav {
+    position: relative;
+}
+
+.wrapper { 
+    width: 1024px;
+    margin: 0 auto 2em;
+}
+
+header nav {
+    margin-top: 44px;
+    display: block;
+    position: relative;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+nav ul.topmenu {
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul.topmenu li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul.topmenu li:hover a {
+    color: black;
+}
+
+nav ul.topmenu > li {
+    font: 28px 'Pathway Gothic One';
+    text-transform: uppercase;
+    line-height: 140px;
+}
+
+nav ul.topmenu > li:nth-child(1) {
+    margin: 0 30px;
+}
+nav ul.topmenu > li:nth-child(2) {
+    margin: 0 30px;
+}
+nav ul.topmenu > li:nth-child(3) {
+    margin: 0 120px 0 30px;
+}
+
+nav ul.topmenu > li:nth-child(4) {
+   margin: 0 30px 0 120px;
+    
+}
+nav ul.topmenu > li:nth-child(5) {
+    margin: 0 30px;
+}
+
+nav ul.topmenu > li:nth-child(6) {
+    margin: 0 30px;
+}
+
+/* _________________________logo_________________________ */
+
+header h1 {
+    position: absolute;
+    top: 5px;
+    left: 440px;
+    background-color: white;
+    width: 140px;
+    line-height: 140px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: 'Dorsa';
+    font-size: 60px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* _________________________DROPMENU_________________________ */
+
+ul.dropmenu {
+    visibility: hidden;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 9px 9px;
+    background: white;
+    border-radius: 3px;
+    text-align: center;
+    left: 198px;
+    top: 89px;
+}
+
+ul.topmenu li:hover ul {
+    visibility: visible;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 9px 9px;
+    background: white;
+    border-radius: 3px;
+    text-align: center;
+    left: 198px;
+    top: 89px;
+}
+
+ul.dropmenu li {
+    line-height: 23px;
+    font-size: 20px;
+    font-family: 'Pathway Gothic One';
+}
+
+header nav ul li ul.dropmenu li a {
+    color: black;
+}
+
+header nav ul li ul.dropmenu li:hover {
+    background: rgb(226, 226, 226);
+}
+
+/* _________________________triangle_________________________ */
+
+.triangle-up {
+    visibility: hidden;
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-bottom: 8px solid white;
+    top: -5px;
+    left: 28px;
+}
+
+.topmenu li:hover li.triangle-up {
+    visibility: visible;
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-bottom: 8px solid white;
+    top: -5px;
+    left: 28px;
+}
+
+
+/* _________________________MAIN_________________________ */
+main {
+    background: white;
+}
+
+
+
+
+/* _________________________MAIN_________________________ */
+
+
+section.main {
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 38px;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+figure {
+    float: left;
+    margin-top: 4px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+section.main article.profile p:first-of-type {
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    
+}
+
+main section.main article.profile {
+    flex: 4.5;
+    margin-right: 84px;
+}
+
+main section.main aside {
+    flex: 1.2;
+}
+
+
+
+h2 {
+    font-family: 'Pathway Gothic One';
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+p {
+    font-family: arial;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+section.main h2 {
+    margin-bottom: 42px;
+    margin-top: 110px;
+}
+
+section.main article.profile p {
+    line-height: 19px;
+}
+
+section.main article.profile div p:nth-child(2) {
+    margin-bottom: 8px;
+}
+
+
+/* ______ORDERED LIST______ */
+
+
+dt {
+    counter-increment: myCounter;
+    margin: 0 0 5px 0;
+    padding: 0;
+    position: relative;
+    font-family: arial;
+    font-size: 15px;
+    margin-bottom: 11px;
+    line-height: 25px;
+    font-weight: 100;
+
+}
+
+dd {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 100;
+    font-family: arial;
+    margin-bottom: 24px;
+    line-height: 18px;
+}
+
+dd:nth-of-type(3) {
+    margin-bottom: 0px;
+}
+
+
+dt::before {
+    content: counter(myCounter);
+    display: inline-block;
+    font-size: 13px;
+    background-color: #38afe5;
+    color: #ffffff;
+    padding: 4px;
+    line-height: 1.5;
+    padding-left: 9px;
+    font-family: arial;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: -40px;
+}
+
+.right-inline-block h2:nth-of-type(2) {
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+main aside {
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+dl {
+    margin-right: 0;
+}
+
+aside.principles h2 {
+    position: relative;
+    left: -42px;
+    margin-bottom: 38px;
+}
+
+/* _________________________BOTTOM_________________________ */
+
+div.bottom {
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 60px 0px 60px;
+    /* padding-bottom: 60px; */
+}
+/* _________________________BOTTOM_________________________ */
+
+div.bottom section.offers article p:first-of-type {
+    font-size: 15px;
+    font-family: arial;
+}
+
+div.bottom section.offers section nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    width: 72%;
+    justify-content: space-between;
+    list-style-image: url(../img/arrow.png);
+}
+
+div.bottom section.offers section nav ul li {
+    width: 45%;
+    line-height: 40px;
+}
+
+div.bottom section.offers {
+    flex: 4.5;
+    margin-right: 84px;
+    margin-bottom: 60px;
+}
+
+aside.testimonial {
+    flex: 1.2;
+}
+
+div.bottom p {
+    line-height: 19px;
+}
+
+div.bottom h2 {
+    margin-bottom: 50px;
+}
+
+div.bottom nav {
+    margin-left: 15px;
+}
+
+
+/* _______________RECTANGLE_______________ */
+
+.rectangle {
+    background: #fcfafa;
+    font-size: 15px arial;
+    width: 204px;
+    height: auto;
+    position: relative;
+    border: 1px solid #dfdcdc;
+    margin-left: 0px;
+    padding: 25px;
+}
+
+.rectangle:after {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 0px solid #dfdcdc;
+    border-right: 1px solid #dfdcdc;
+    border-bottom: 1px solid #dfdcdc;
+    border-left: 0px solid #dfdcdc;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    content: '';
+    transform: rotate(45deg);
+    margin-top: -15px;
+    background: #fcfafa;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote::before {
+    content: "\201c";
+
+}
+
+blockquote::after {
+    content: "\201d";
+}
+
+address {
+    /* margin-top: 40px; */
+    text-align: center;
+}
+
+aside.testimonial h2 {
+    margin-bottom: 20px;
+}
+
+aside.testimonial >address {
+    margin-top: 40px;
+}
+
+
+/* _________________________FOOTER_________________________ */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+nav.list {
+    background-color: #30455b;
+}
+
+nav.list ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 30px 186px 30px 138px;
+}
+
+nav.list li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+}
+
+nav.list li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav.social-links ul {
+    list-style: none;
+}
+
+.buttons li a {
+    background: url(../img/4sprites.png) no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-position: -70px -70px;
+}
+
+nav ul.buttons li.button-2 a {
+    background-position: -10px -10px;
+}
+
+
+nav ul.buttons li.button-3 a {
+    background-position: -70px -10px;
+}
+
+nav ul.buttons li.button-4 a {
+    background-position: -10px -70px;
+}
+
+nav ul.buttons li.button-1:hover a {
+    filter: saturate(8);
+}
+
+nav ul.buttons li.button-2:hover a {
+    filter: saturate(8);
+}
+
+
+nav ul.buttons li.button-3:hover a {
+    filter: saturate(8);
+}
+
+nav ul.buttons li.button-4:hover a {
+    filter: saturate(8);
+}
+
+
+nav.social-links ul.buttons li {
+    margin: 25px 3px;
+}
+nav.social-links ul.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+nav.social-links {
+    text-align: center;
+}
+
+nav.social-links address {
+    font-size: 12px;
+    font-family: arial;
+    font-weight: 100;
+}
