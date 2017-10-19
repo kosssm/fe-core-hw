@@ -13,6 +13,7 @@ body {
     background-size: auto;
     box-sizing: border-box;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* _________________________TOPMENU_________________________ */

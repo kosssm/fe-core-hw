@@ -17,9 +17,10 @@ html {
 
 body {
     background-image: url(../img/Layer57.png);
-    background-size: auto;
+    background-size: cover;
     box-sizing: border-box;
     background-repeat: no-repeat;
+
 }
 
 /* _________________________TOPMENU_________________________ */
@@ -233,6 +234,36 @@ main figure div:nth-child(1) a:hover img:nth-child(3) {
 
 
 
+/* ПЫТАЛЯСЯ ЗАДАТЬ ЗАТЕМНЕНИЕ С ПОМОЩЬЮ ::begore -------НЕ РАБОТАЕТ!!!! хотел что бы в <a> было вместо 3х картинок одна */
+
+/* main figure div:nth-child(1) a:before img {
+    background-image: url(img/black-background.png);
+    position: relative;
+    z-index: 1000;
+}
+
+main figure div:nth-child(1) a img {
+    position: relative;
+    z-index: 100;
+    opacity: .5;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main figure div:nth-child(2) a img:nth-child(2) {
     position: absolute;
     visibility: hidden;
@@ -257,26 +288,7 @@ main figure div:nth-child(2) a:hover img:nth-child(3) {
 
 
 
-/* main figure div:nth-child(2) a img:nth-child(2) {
-    position: absolute;
-    visibility: hidden;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-}
 
-main figure div:nth-child(2) a img:nth-child(3) {
-    visibility: hidden;
-    position: absolute;
-    z-index: 2;
-    top: 60px;
-    left: 130px;
-}
-
-main figure div:nth-child(2):hover img:nth-child(2),
-main figure div:nth-child(2) a:hover img:nth-child(3) {
-    visibility: visible;
-} */
 
 
 
@@ -446,40 +458,6 @@ main figure div:nth-child(9) a:hover img:nth-child(3) {
 
 
 
-
-
-
-/* main figure div.a a img:nth-child(2):hover {
-    visibility: visible;
-} */
-
-
-
-
-
-
-/* main figure div a {
-    display: block;
-} */
-
-
-/* main figure div div img {
-    z-index: 1000;
-} */
-
-
-/* main figure div::before {
-    content: url(img/black-background.png);
-    background: url(img/black-background.png);
-}
-
-main figure div a img:before {
-    background: url(img/black-background.png);
-}
-
-main figure a img {
-    opacity: .5;
-} */
 
 
 

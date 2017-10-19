@@ -10,10 +10,11 @@
 
 body {
     background-image: url(../img/Layer57.png);
-    /* background-size: auto; */
     box-sizing: border-box;
-    /* background-repeat: repeat; */
-    background: cover;
+    background-attachment: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cf:before,
@@ -332,6 +333,18 @@ aside.principles h2 {
     margin-bottom: 38px;
 }
 
+hr {
+
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.425);
+    margin: 1em 0;
+    padding: 0; 
+    width: 900px;
+    margin: 0 auto;
+}
+
 /* _________________________BOTTOM_________________________ */
 
 div.bottom {
@@ -395,7 +408,7 @@ div.bottom nav {
     position: relative;
     border: 1px solid #dfdcdc;
     margin-left: 0px;
-    padding: 25px;
+    padding: 25px 15px 25px 25px;
 }
 
 .rectangle:after {
@@ -431,6 +444,7 @@ blockquote::after {
 address {
     /* margin-top: 40px; */
     text-align: center;
+    font-style: normal;
 }
 
 aside.testimonial h2 {
@@ -442,11 +456,30 @@ aside.testimonial >address {
 }
 
 
+
+div.bottom aside.testimonial address {
+    font-family: arial;
+    font-size: 13px;
+}
+
+div.bottom aside.testimonial address::first-line {
+    font-family: arial;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+
 /* _________________________FOOTER_________________________ */
 
 footer {
     display: flex;
     flex-direction: column;
+}
+
+footer nav ul li address {
+    font-size: 12px;
+    text-transform: lowercase;
+    font-family: arial;
 }
 
 nav.list {
@@ -457,7 +490,7 @@ nav.list ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 30px 186px 30px 138px;
+    margin: 40px 186px 40px 138px;
 }
 
 nav.list li {
@@ -529,8 +562,32 @@ nav.social-links {
     text-align: center;
 }
 
-nav.social-links address {
+footer nav.social-links address {
     font-size: 12px;
     font-family: arial;
     font-weight: 100;
+    font-style: normal;
+    color: white;
+}
+
+/* _________________________to top button_________________________ */
+
+div.to-top {
+    line-height: 30px;
+    width: 30px;
+    background: #38afe5;
+    /* position: relative; */
+    /* top: 1px;
+    left: 1px;
+    overflow: hidden; */
+    position: fixed;
+    bottom: 285px;
+    margin-left: 980px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+}
+
+.to-top a {
+    color: white;
 }

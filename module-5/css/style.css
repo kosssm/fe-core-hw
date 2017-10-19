@@ -4,9 +4,8 @@
 }
 
 html {
-    background-image: url(../img/Layer-57.jpg);
-    background-size: 100%;
-    box-sizing: border-box;
+
+
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -17,6 +16,9 @@ body {
     position: relative;
     width: 1024px;
     margin: 0 auto 2em;
+    background-image: url(../img/Layer-57.jpg);
+    background-size: cover;
+    box-sizing: border-box;
 }
 
 /* _____________________MENU________________________ */
