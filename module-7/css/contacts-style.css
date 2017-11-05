@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto 2em;
+    background-image: url(../img/Layer-57.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+div.wrapper {
+    background: white;
+    padding-bottom: 100px;
+}
+
+
+/* _________________________TOPMENU_________________________ */
+
+header nav {
+    position: relative;
+}
+
+.wrapper { 
+    width: 1024px;
+    margin: 0 auto 2em;
+}
+
+header nav {
+    margin-top: 44px;
+    display: block;
+    position: relative;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+nav ul.topmenu {
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul.topmenu li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul.topmenu li:hover a {
+    color: black;
+}
+
+nav ul.topmenu > li {
+    font: 28px 'Pathway Gothic One';
+    text-transform: uppercase;
+    line-height: 140px;
+}
+
+nav ul.topmenu > li:nth-child(1) {
+    margin: 0 30px;
+}
+nav ul.topmenu > li:nth-child(2) {
+    margin: 0 30px;
+}
+nav ul.topmenu > li:nth-child(3) {
+    margin: 0 54px 0 30px;
+}
+
+nav ul.topmenu > li:nth-child(5) {
+   margin: 0 30px 0 54px;
+    
+}
+nav ul.topmenu > li:nth-child(6) {
+    margin: 0 30px;
+}
+
+nav ul.topmenu > li:nth-child(7) {
+    margin: 0 30px;
+}
+
+/* _________________________logo_________________________ */
+
+header h1 {
+    top: 5px;
+    left: 440px;
+    background-color: white;
+    width: 140px;
+    line-height: 140px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: 'Dorsa';
+    font-size: 60px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* _________________________DROPMENU_________________________ */
+
+ul.dropmenu {
+    visibility: hidden;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 9px 9px;
+    background: white;
+    border-radius: 3px;
+    text-align: center;
+    left: 198px;
+    top: 89px;
+}
+
+ul.topmenu li:hover ul {
+    visibility: visible;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 9px 9px;
+    background: white;
+    border-radius: 3px;
+    text-align: center;
+    left: 198px;
+    top: 89px;
+}
+
+ul.dropmenu li {
+    line-height: 23px;
+    font-size: 20px;
+    font-family: 'Pathway Gothic One';
+}
+
+header nav ul li ul.dropmenu li a {
+    color: black;
+}
+
+header nav ul li ul.dropmenu li:hover {
+    background: rgb(226, 226, 226);
+}
+
+/* _________________________triangle_________________________ */
+
+ul.dropmenu:before {
+    content: '';
+    visibility: hidden;
+    position: absolute;
+	width: 10;
+	height: 10;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-bottom: 8px solid white;
+    top: -5px;
+    left: 28px;
+}
+
+.topmenu li:hover ul.dropmenu:before {
+
+    visibility: visible;
+    position: absolute;
+	width: 10;
+	height: 10;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-bottom: 8px solid white;
+    top: -5px;
+    left: 28px;
+}
+
+/* ________________________MAIN CONTENT________________________ */
+
+.tables {
+    display: block;
+}
+
+
+
+input, textarea {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+div.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 60px 100px 60px;
+    margin: 0 auto;
+
+}
+
+article {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 100px;
+}
+
+aside {
+    margin-top: 100px;
+    margin-right: 60px;
+}
+
+.bottom-row {
+    vertical-align: bottom;
+}
+
+article section h2 {
+    margin-bottom: 50px;
+}
+
+iframe {
+    margin-right: 18px;
+}
+
+.tables {
+    margin-top: 80px;
+}
+
+caption {
+    text-align: left;
+}
+
+div.tables table tbody tr td:nth-child(1) {
+    padding-right: 30px;
+}
+
+caption {
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+table, p {
+    margin-bottom: 20px;
+}
+
+span {
+    color: red;
+}
+
+input[type="text"], input[type="email"] {
+    width: 200px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+}
+
+form div.buttons {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+form {
+    box-sizing: border-box;
+}
+
+input[type="reset"] {
+   display: inline-block;
+   width: 80px;
+   height: 25px;
+   box-sizing: border-box;
+   border: 1px solid black;
+   border-radius: 5px;
+   margin-right: 10px;
+   background: #fbf6f8;
+}
+input[type="submit"] {
+    display: block;  
+    height: 25px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: #fbf6f8;
+}
+
+aside h2 {
+    margin-bottom: 50px;
+}
+
+
+
+form {
+    position: relative;
+}
+
+form span {
+    visibility: visible;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+form div.red-field:active span {
+    visibility: hidden;
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* _________________________FOOTER_________________________ */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer address {
+    font-family: arial;
+    font-size: 12px;
+    font-style: normal;
+}
+
+nav.list {
+    background-color: #30455b;
+}
+
+nav.list ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 40px 186px 40px 138px;
+}
+
+nav.list li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+}
+
+nav.list li a {
+    color: white;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+nav.social-links ul {
+    list-style: none;
+}
+
+.buttons li a {
+    background: url(../img/4sprites.png) no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-position: -70px -70px;
+}
+
+nav ul.buttons li.button-2 a {
+    background-position: -10px -10px;
+}
+
+
+nav ul.buttons li.button-3 a {
+    background-position: -70px -10px;
+}
+
+nav ul.buttons li.button-4 a {
+    background-position: -10px -70px;
+}
+
+nav ul.buttons li.button-1:hover a {
+    filter: saturate(8);
+}
+
+nav ul.buttons li.button-2:hover a {
+    filter: saturate(8);
+}
+
+
+nav ul.buttons li.button-3:hover a {
+    filter: saturate(8);
+}
+
+nav ul.buttons li.button-4:hover a {
+    filter: saturate(8);
+}
+
+
+nav.social-links ul.buttons li {
+    margin: 25px 3px;
+}
+nav.social-links ul.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+nav.social-links {
+    text-align: center;
+}
+
+nav.social-links address {
+    font-size: 12px;
+    font-family: arial;
+    font-weight: 100;
+}
+
+
+/* _________________________to top button_________________________ */
+
+.to-top {
+    line-height: 30px;
+    width: 30px;
+    background: #38afe5;
+    position: fixed;
+    bottom: 285px;
+    margin-left: 980px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+}
+
+.to-top a {
+    color: white;
+}
+
+nav.social-links address {
+    color: white;
+    margin: 0;
+    padding: 0;
+}

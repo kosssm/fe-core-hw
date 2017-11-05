@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto 2em;
+    background-image: url(../img/Layer-57.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/* _____________________MENU________________________ */
+
+nav {
+    height: 100%;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+/* ___________________TOPMENU________________________ */
+
+ul.topmenu > li > a {
+    color: white;
+}
+
+
+nav ul.topmenu {
+    display: block;
+    margin-left: 70px;
+    margin-right: 66px;
+    margin-top: 26px;
+    margin-bottom: 36px;
+}
+
+nav ul.topmenu > li {
+    display: inline-block;
+    font: 28px 'Pathway Gothic One';
+    text-transform: uppercase;
+    padding: 20px;
+    line-height: 140px;
+}
+
+nav ul.topmenu > li a {
+    text-decoration: none;
+}
+
+ul.topmenu > li:nth-child(1) {
+    margin-left: 10px;
+    margin-right: 13px;
+}
+
+ul.topmenu > li:nth-child(2) {
+    margin-right: 13px;
+}
+
+ul.topmenu > li:nth-child(3) {
+    margin-right: 100px;
+}
+
+ul.topmenu > li:nth-child(4) {
+    margin-left: 100px;
+    margin-right: 12px;
+}
+
+ul.topmenu > li:nth-child(5) {
+    margin-right: 15px;
+}
+
+ul.topmenu > li:nth-child(6) {
+    margin-right: 10px;
+}
+
+/* ________________________logo_________________________ */
+
+.logo {
+    position: absolute;
+    top: 23px;
+    left: 444px;
+    line-height: 140px;
+    width: 140px;
+    background: white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: Dorsa;
+}
+
+/* ____________________DROPDOWN MENU____________________ */
+
+.dropmenu {
+    position: relative;
+}
+
+nav ul.dropmenu {
+    position: absolute;
+    display: none;
+    top: 115px;
+    left: 202px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.topmenu li:hover ul {
+    position: absolute;
+    display: block;
+    top: 115px;
+    left: 202px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul.dropmenu > li {
+    display: block;
+    line-height: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One';
+    text-align: center;
+}
+
+nav ul.dropmenu > li a {
+    text-decoration: none;
+}
+
+/* _______________________triangle_____________________ */
+
+.triangle-top {
+    visibility: hidden;
+    position: absolute;
+    top: 110px;
+    left: 225px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent white transparent;
+}
+
+.topmenu li:hover div.triangle-top {
+    visibility: visible;
+    position: absolute;
+    top: 110px;
+    left: 225px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent white transparent;
+}
+
+/* ______________________WRAPPER__________________ */
+.wrapper {
+    background-color: white;
+    height: 100%;
+}
+
+
+/* _______________________ARTICLE__________________ */
+
+
+figure.slider {
+    background-color: white;
+    display: block;
+    height: 100%;
+    position: relative;
+    font-size: 0;
+}
+
+figure.slider img {
+    margin: 61px 61px 50px 61px;
+}
+
+p.link-on-places {
+    position: absolute;
+    top: 280px;
+    left: 75px;
+    text-transform: uppercase;
+    line-height: 55px;
+}
+
+p.link-on-places a {
+    text-decoration: none;
+}
+
+p.link-on-places span:first-child {
+    font-size: 22px;
+    font-family: 'Pathway Gothic One';
+    color: black;
+}
+
+p.link-on-places span:last-child {
+    font-size: 34px;
+    font-family: 'Pathway Gothic One';
+    color: white;
+}
+
+
+
+/* _____________________________controls_________________________ */
+
+.wrapper-circle {
+    position: absolute;
+    top: 730px;
+    left: 98px;
+    font-size: 0px;
+}
+
+
+.halfCircleLeft{
+    text-align: center;
+    display: inline-block;
+    line-height:86px;
+    width:43px;
+    border-radius: 90px 0 0 90px;
+    background: #38afe5;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.halfCircleRight{
+    text-align: center;
+    display: inline-block;
+    line-height:86px;
+    width:43px;
+    border-radius: 0 90px 90px 0;
+    background:#38afe5;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.halfCircleLeft:hover {
+    opacity: .7;
+}
+.halfCircleRight:hover {
+    opacity: .7;
+}
+
+.halfCircleRight::before {
+    content: url(../img/right.png);
+    font-family: FontAwesome;
+    font-size: 15px;
+    font-weight: 100;
+    padding-right: 10px;
+}
+
+.halfCircleLeft::after {
+    content: url(../img/left.png);
+    font-family: FontAwesome;
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 10px;
+}
+
+
+
+/* ______________________________FLEXBOX_________________________ */
+
+article.cities {
+    display: block;
+    background: white;
+    margin-left: 61px;
+    margin-right: 61px;
+    margin-bottom: 136px;
+}
+
+article.cities h1 {
+    margin-bottom: 46px;
+}
+
+div.flexbox img {
+    display: block;
+}
+
+h1 {
+    font-size: 31px;
+    font-family: 'Pathway Gothic One';
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: normal;
+}
+div.flexbox {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.fig-city {
+    position: relative;
+}
+
+figure.img1 h2, figure.img2 h2, figure.img3 h2 {
+    font-weight: 100;
+    font-size: 30px;
+    font-family: 'Open Sans';
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+figure.img1 p, figure.img2 p, figure.img3 p {
+    font-size: 10.5px;
+    font-family: 'arial';
+    font-weight: 100;
+    line-height: 15px;
+    text-align: center;
+}
+
+figure.img1 div.transition-1, figure.img2 div.transition-2, figure.img3 div.transition-3 {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #193149;
+    width: 0px;
+    height: 270px;
+    overflow: hidden;
+    color: white;
+    transition: 1s ease-out;
+    
+}
+
+figure.img1:hover div {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #193149;
+    width: 146px;
+    height: 270px;
+    overflow: hidden;
+    color: white;
+    transition: 1s;
+    transition-timing-function: ease-out;
+}
+
+figure.img2:hover div {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #193149;
+    width: 146px;
+    height: 270px;
+    overflow: hidden;
+    color: white;
+    transition: 1s;
+    transition-timing-function: ease-out;
+}
+
+figure.img3:hover div {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #193149;
+    width: 146px;
+    height: 270px;
+    overflow: hidden;
+    color: white;
+    transition: 1s;
+    transition-timing-function: ease-out;
+}
+
+
+
+
+
+button {
+    position: absolute;
+    right: 0px;
+    bottom: 6px;
+    width: 60px;
+    line-height: 20px;
+    margin-right: 14px;
+    margin-bottom: 8px;
+    float: right;
+    border-radius: 5px;
+    background: white;
+    font-family: arial;
+    font-size: 12px;
+    background-color: rgb(214, 210, 210);
+    transition: width 2s, line-height 2s;
+    animation-name: left-animation-button;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+figure.img1 div.transition-2 {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #193149;
+    width: 0px;
+    height: 270px;
+    overflow: hidden;
+    color: white;
+    transition: 1s ease-out;
+}
+
+
+
+/* __________________________TRANSITION__________________________ */
+
+@keyframes left-animation-button {
+    /* from {background-color: rgb(214, 210, 210);}
+    to {background-color: black;} */
+    from {color: black;}
+    to {color: white;}
+
+    0%   {background-color: rgb(231, 205, 205); width: 65px; line-height: 25px;}
+    25%  {background-color: white;}
+    50%  {background-color: grey;}
+    75%  {background-color: rgb(209, 209, 228);}
+    100% {background-color: rgb(210, 233, 215);}
+
+}
+
+@keyframes header-animation {
+    from {transform: rotate(180deg);}
+    to {transform: rotate(0deg);}
+
+}
+
+button:hover {
+    width: 80px;
+    line-height: 30px;
+}
+
+
+
+figure.img1:hover div.transition-1 h2, figure.img3:hover div.transition-3 h2, figure.img2:hover div.transition-2 h2 {
+    animation-name: header-animation;
+    animation-duration: 1s;
+    background: white;
+    color: black;
+    transition-duration: 3s;
+}
+
+
+
+
+
+
+
+
+
+/* __________________________TO TOP BUTTON_____________________ */
+
+
+
+.to-top {
+    width: 100%;
+    height: 10px;
+    display: table;
+   position: sticky;
+   top: 1px;
+   left: 1px;
+
+}
+
+div.to-top a {
+    position: fixed;
+    line-height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #38afe5;
+    bottom: 55px;
+    margin-left: 980px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+
+}
