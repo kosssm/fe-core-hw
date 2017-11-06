@@ -1,0 +1,113 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+div.wrapper {
+    max-width: 960px;
+}
+
+div.wrapper div:nth-child(1) {
+    background: red;
+    max-width: 960px;
+    display: block;
+    width: 90%;
+    margin: 5%;
+    height: 40px;
+}
+
+div.wrapper div:nth-child(2) {
+    background: green;
+    
+}
+
+div.wrapper div:nth-child(3) {
+    background: blue;
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    div.wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.wrapper div:nth-child(1) {
+        height: 40px;
+    }
+
+    div.wrapper div:nth-child(2) {
+        height: 140px;
+        /* display: inline-block; */
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2%;
+
+    }
+
+    div.wrapper div:nth-child(3) {
+        height: 140px;
+        /* display: inline-block; */
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 481px) {
+
+    div.wrapper {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    div.wrapper div:nth-child(1) {
+        height: 40px;
+    }
+
+    div.wrapper div:nth-child(2) {
+        height: 140px;
+        /* display: inline-block; */
+        width: 60%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    div.wrapper div:nth-child(3) {
+        height: 140px;
+        /* display: inline-block; */
+        width: 24.5%;
+        margin-right: 5%;
+    }
+
+
+
+
+
+}
+

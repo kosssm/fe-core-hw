@@ -1,0 +1,31 @@
+body {
+    background: url(../img/beach.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+        background: url(../img/bird.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    body {
+        background: url(../img/palm.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: url(../img/ship.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}

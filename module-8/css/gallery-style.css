@@ -1,0 +1,1094 @@
+/* global styles______________________________________________________________________________________- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+body {
+    background-image: url(../img/Layer57.png);
+    background-size: cover;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+
+
+/* _________________________MAIN_________________________ */
+
+main {
+    background-color: white;
+}
+
+/* _________________________FOOTER_________________________ */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+nav.list {
+    background-color: #30455b;
+}
+
+.buttons li a {
+    background: url(../img/4sprites.png) no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-position: -70px -70px;
+}
+
+nav ul.buttons li.button-2 a {
+    background-position: -10px -10px;
+}
+
+
+nav ul.buttons li.button-3 a {
+    background-position: -70px -10px;
+}
+
+nav ul.buttons li.button-4 a {
+    background-position: -10px -70px;
+}
+
+nav ul.buttons li.button-1:hover a {
+    filter: saturate(8);
+}
+
+nav ul.buttons li.button-2:hover a {
+    filter: saturate(8);
+}
+
+
+nav ul.buttons li.button-3:hover a {
+    filter: saturate(8);
+}
+
+nav ul.buttons li.button-4:hover a {
+    filter: saturate(8);
+}
+
+footer nav.list ul li {
+    list-style-type: none;
+}
+
+footer nav.social-links ul.buttons li {
+    list-style-type: none;
+} 
+
+footer nav.social-links ul.buttons {
+    display: flex;
+}
+
+address { 
+    font-style: normal;
+
+}
+
+/* _________________________to top button_________________________ */
+
+.to-top {
+    line-height: 30px;
+    width: 30px;
+    background: #38afe5;
+    position: fixed;
+    text-align: center;
+    color: white;
+}
+
+.to-top a {
+    color: white;
+}
+
+nav.social-links address {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* mobile styles________________________________________________________________________________________________________________________________________ */
+
+@media only screen and (max-width:767px) {
+    .wrapper {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        background: white;
+        width: 77px;
+        line-height: 77px;
+        text-align: center;
+        font-size: 33px;
+        font-family: 'dorsa';
+        text-transform: uppercase;
+        font-weight: 100;
+        border-radius: 50px;
+        margin: 0 auto;
+    }
+
+    header nav.menu {
+        margin-top: 30px;
+        position: relative;
+    }
+
+    header nav.menu ul.topmenu {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: 'pathway gothic one';
+        width: 320px;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+
+    header nav.menu ul.topmenu li {
+        padding: 5px;
+        margin: 0px 15px;
+    }
+
+    header nav.menu ul.topmenu li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    header nav.menu ul.topmenu li ul.dropmenu {
+        list-style-type: none;
+        font-size: 14px;
+        background: white;
+        text-align: center;
+        border-radius: 3px;
+        position: absolute;
+        height: 44px;
+        width: 45px;
+        margin: 0px;
+        padding: 0;
+        top: 130px;
+        left: 214px;
+        visibility: hidden;
+    }
+
+    header nav.menu ul.topmenu li:hover ul.dropmenu {
+        visibility: visible;
+    }
+
+    header nav.menu ul.topmenu li ul.dropmenu li a {
+        color: black;
+    }
+
+    header nav.menu ul.topmenu li ul.dropmenu li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ___________________________MAIN___________________________ */
+
+    h2 {
+        padding-top: 60px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 60px;
+        text-transform: uppercase;
+    }
+
+    main figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main figure div a {
+        display: block;
+        height: 217px;
+        width: 406px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    main figure div:nth-child(1) a {
+        background: url(../img/gallery480/waterfall480.png);
+    }
+
+    main figure div:nth-child(2) a {
+        background: url(../img/gallery480/castle480.png);
+    }
+
+    main figure div:nth-child(3) a {
+        background: url(../img/gallery480/hotel480.png);
+    }
+
+    main figure div:nth-child(4) a {
+        background: url(../img/gallery480/rome480.png);
+    }
+
+    main figure div:nth-child(5) a {
+        background: url(../img/gallery480/island480.png);
+    }
+
+    main figure div:nth-child(6) a {
+        background: url(../img/gallery480/penguins480.png);
+    }
+
+    main figure div:nth-child(7) a, main figure div:nth-child(8) a, main figure div:nth-child(9) a {
+        display: none;
+    }
+
+    main figure div {
+        position: relative;
+    }
+
+    main figure div:hover a::before {
+        background: url(../img/gallery480/background468.png);
+        width: 406px;
+        height: 217px;
+        content: '';
+        position: absolute;
+        visibility: visible;
+    }
+
+    main figure div a::before {
+        background: url(../img/gallery480/background468.png);
+        width: 406px;
+        height: 217px;
+        content: '';
+        position: absolute;
+        visibility: hidden;
+    }
+
+
+
+    main figure div a::after {
+        background: url(../img/gallery480/icon480.png);
+        position: absolute;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+        content: '';
+        top: 110px;
+        left: 220px;
+        visibility: hidden;
+    }
+
+    main figure div:hover a::after {
+        background: url(../img/gallery480/icon480.png);
+        position: absolute;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+        content: '';
+        top: 110px;
+        left: 220px;
+        visibility: visible;
+    }
+
+    figure {
+        padding-bottom: 40px;
+    }
+
+
+    /* ____________________________FOOTER__________________________ */
+
+    footer nav.list ul {
+        width: 100%;
+        justify-content: space-between;
+        /* margin-left: 30px;
+        margin-right: 30px; */
+        margin-left: 60px;
+    }
+
+    footer nav.list ul li a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: 'Open Sans';
+    }
+
+    footer nav.list ul li:nth-child(1), footer nav.list ul li:nth-child(2), footer nav.list ul li:nth-child(3) {
+        display: inline-block;
+    }
+
+    footer nav.list ul li:nth-child(1), footer nav.list ul li:nth-child(2) {
+        padding-right: 40px;
+    }
+
+    footer nav.list {
+        padding: 20px 40px;
+    }
+
+    footer nav.list ul li:nth-child(4) {
+        display: block;
+        padding-top: 20px;
+    }
+
+    footer nav.list ul li:nth-child(4) address {
+        display: inline;
+        color: white;
+    }
+
+    footer nav.list ul li:nth-child(4) {
+        color: white;
+        font-family: 'open sans';
+        font-size: 13px;
+    }
+
+    nav.list ul li address br {
+        display: none;
+    }
+
+    .mobile, .email {
+        display: inline-block;
+        padding-left: 30px;
+        position: relative;
+    }
+
+    .mobile::before {
+        content: '';
+        background: url(../img/gallery480/mobile.png);
+        width: 10px;
+        height: 17px;
+        margin-right: 5px;
+        position: absolute;
+        top: 0px;
+        left: 15px;
+    }
+
+    .email::before {
+        content: '';
+        background: url(../img/gallery480/email.png);
+        width: 18px;
+        height: 14px;
+        margin-right: 5px;
+        position: absolute;
+        top: 0px;
+        left: 8px;
+    }
+
+    nav.social-links ul.buttons {
+        display: block;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    nav.social-links ul.buttons li {
+        padding: 10px;
+    }
+
+    nav.social-links address {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* desktop styles_____________________________________________________________________________________________________________________________________ */
+
+@media only screen and (min-width: 1024px) {
+
+    .wrapper { 
+        width: 1024px;
+        margin: 0 auto 2em;
+    }
+
+    /* _________________________TOPMENU_________________________ */
+
+header nav {
+    position: relative;
+}
+
+header nav {
+    margin-top: 44px;
+    display: block;
+    position: relative;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+nav ul.topmenu {
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul.topmenu li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul.topmenu li:hover a {
+    color: black;
+}
+
+nav ul.topmenu > li {
+    font: 28px 'Pathway Gothic One';
+    text-transform: uppercase;
+    line-height: 140px;
+}
+
+nav ul.topmenu > li:nth-child(1) {
+    margin: 0 30px;
+}
+nav ul.topmenu > li:nth-child(2) {
+    margin: 0 30px;
+}
+nav ul.topmenu > li:nth-child(3) {
+    margin: 0 120px 0 30px;
+}
+
+nav ul.topmenu > li:nth-child(4) {
+   margin: 0 30px 0 120px;
+    
+}
+nav ul.topmenu > li:nth-child(5) {
+    margin: 0 30px;
+}
+
+nav ul.topmenu > li:nth-child(6) {
+    margin: 0 30px;
+}
+
+/* _________________________logo_________________________ */
+
+header h1 {
+    position: absolute;
+    top: 5px;
+    left: 440px;
+    background-color: white;
+    width: 140px;
+    line-height: 140px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: 'Dorsa';
+    font-size: 60px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+
+/* _________________________DROPMENU_________________________ */
+
+ul.dropmenu {
+    visibility: hidden;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 9px 9px;
+    background: white;
+    border-radius: 3px;
+    text-align: center;
+    left: 198px;
+    top: 89px;
+}
+
+ul.topmenu li:hover ul {
+    visibility: visible;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 9px 9px;
+    background: white;
+    border-radius: 3px;
+    text-align: center;
+    left: 198px;
+    top: 89px;
+}
+
+ul.dropmenu li {
+    line-height: 23px;
+    font-size: 20px;
+    font-family: 'Pathway Gothic One';
+}
+
+header nav ul li ul.dropmenu li a {
+    color: black;
+}
+
+header nav ul li ul.dropmenu li:hover {
+    background: rgb(226, 226, 226);
+}
+
+/* _________________________triangle_________________________ */
+
+.triangle-up {
+    visibility: hidden;
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-bottom: 8px solid white;
+    top: -5px;
+    left: 28px;
+}
+
+.topmenu li:hover div.triangle-up {
+
+    visibility: visible;
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-bottom: 8px solid white;
+    top: -5px;
+    left: 28px;
+}
+
+/* _________________________MAIN_________________________ */
+
+
+
+main h2 {
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One';
+    font-size: 32px;
+    font-weight: 100;
+    background: white;
+    padding-top: 82px;
+    padding-bottom: 44px;
+    margin-left: 60px;
+}
+
+main figure {
+    display: block;
+    background: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 120px;
+    font-size: 0px;
+}
+
+main figure div {
+    margin: 20px 10px;
+    position: relative;
+}
+
+main figure div:nth-child(1) a {
+    background: url(../img/gallery/waterfall.png) no-repeat;
+}
+
+main figure div:nth-child(2) a {
+    background: url(../img/gallery/castle.png) no-repeat;
+}
+
+main figure div:nth-child(3) a {
+    background: url(../img/gallery/hotel.png) no-repeat;
+}
+
+main figure div:nth-child(4) a {
+    background: url(../img/gallery/rome.png) no-repeat;
+}
+
+main figure div:nth-child(5) a {
+    background: url(../img/gallery/island.png) no-repeat;
+}
+
+main figure div:nth-child(6) a {
+    background: url(../img/gallery/penguins.png) no-repeat;
+}
+
+main figure div:nth-child(7) a {
+    background: url(../img/gallery/bridge.png) no-repeat;
+}
+
+main figure div:nth-child(8) a {
+    background: url(../img/gallery/eifel.png) no-repeat;
+}
+
+main figure div:nth-child(9) a {
+    background: url(../img/gallery/rocks.png) no-repeat;
+}
+
+main figure div a {
+    display: block;
+    width: 288px;
+    height: 154px;
+}
+
+main figure div a::before {
+    background: url(../img/gallery/black-background.png);
+    width: 288px;
+    height: 154px;
+    content: 'sadf';
+    position: absolute;
+    visibility: hidden;
+}
+
+main figure div:hover a::before {
+    background: url(../img/gallery/black-background.png);
+    width: 288px;
+    height: 154px;
+    content: 'sadf';
+    position: absolute;
+    visibility: visible; 
+}
+
+main figure div a::after {
+    background: url(../img/icon.png);
+    position: absolute;
+    z-index: 1;
+    width: 33px;
+    height: 33px;
+    content: '';
+    top: 60px;
+    left: 130px;
+    visibility: hidden;
+}
+
+main figure div:hover a::after {
+    background: url(../img/icon.png);
+    position: absolute;
+    z-index: 1;
+    width: 33px;
+    height: 33px;
+    content: '';
+    top: 60px;
+    left: 130px;
+    visibility: visible;
+}
+
+/* ______________________FOOTER_________________ */
+
+footer address {
+    font-family: arial;
+    font-size: 12px;
+    font-style: normal;
+}
+
+nav.list ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 40px 186px 40px 138px;
+}
+
+nav.list li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+}
+
+nav.list li a {
+    color: white;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+nav.social-links ul {
+    list-style: none;
+}
+
+nav.social-links ul.buttons li {
+    margin: 25px 3px;
+}
+nav.social-links ul.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+nav.social-links {
+    text-align: center;
+}
+
+nav.social-links address {
+    font-size: 12px;
+    font-family: arial;
+    font-weight: 100;
+}
+
+/* _____to top button_____ */
+.to-top {
+    bottom: 285px;
+    margin-left: 980px;
+    border-radius: 50px;
+}
+
+}
+
+
+
+/* tablet styles_________________________________________________________________________________________________________________________________________________________________________ */
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+
+    /* __________________TOPMENU___________________ */
+
+    header {
+        margin-bottom: 8px;
+    }
+
+    div.wrapper {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 43px;
+        font-family: 'dorsa';
+        font-weight: 100;
+        margin: 0 auto;
+        background: #f2f2f3;
+        line-height: 100px;
+        width: 100px;
+        text-align: center;
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav.menu {
+        width: 370px;
+        margin: 0 auto;
+    }
+
+    nav ul.topmenu {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 30px;
+    }
+
+    nav ul.topmenu li {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: "Pathway Gothic One";
+        margin: 0px 20px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    nav ul.topmenu li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul.topmenu li a:hover {
+        color: black;
+    }
+
+
+    /* _________________________DROPMENU_________________________ */
+
+    nav ul {
+        position: relative;
+    }
+
+    nav ul li ul.dropmenu {
+        visibility: hidden;
+        position: absolute;
+        line-height: 14px;
+        background: white;
+        width: 60px;
+        border-radius: 3px;
+        top: 46px;
+        left: 128px;
+        background: #f2f2f3;
+        width: 60px;
+        height: 78px;
+    }
+
+    nav ul li:hover ul.dropmenu {
+        visibility: visible;
+    }
+
+    nav ul li ul.dropmenu li { 
+        background: #f2f2f3;
+        font-size: 17px;
+        padding: 6px;
+
+    }
+
+    nav ul li ul.dropmenu li a {
+        color: black;
+
+    }
+
+    nav ul li ul.dropmenu li:hover a {
+        background: rgb(196, 194, 194);
+    }
+
+    nav ul li ul.dropmenu:before {
+    content: '';
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #f2f2f3;
+    top: -5px;
+    left: 24px;
+   }
+
+   nav ul li:hover ul.dropmenu:before {
+       visibility: visible;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ____________________________MAIN____________________________ */
+
+    main figure div:last-child {
+        display: none;
+    }
+
+    main h2 {
+        text-transform: uppercase;
+        font-family: 'Pathway Gothic One';
+        font-size: 28px;
+        font-weight: 100;
+        background: white;
+        padding-top: 80px;
+        padding-bottom: 20px;
+        margin-left: 60px;
+    }
+    
+    main figure {
+        display: block;
+        background: white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding-bottom: 66px;
+        font-size: 0px;
+    }
+    
+    main figure div {
+        margin: 20px 5px;
+        position: relative;
+        /* padding-bottom: 30px; */
+    }
+
+    main figure div a {
+        display: block;
+        width: 331px;
+        height: 177px;
+    }
+
+    main figure div:nth-child(1) a {
+        background: url(../img/for768/waterfall768.png);
+    }
+
+    main figure div:nth-child(2) a {
+        background: url(../img/for768/castle768.png);
+    }
+
+    main figure div:nth-child(3) a {
+        background: url(../img/for768/hotel768.png);
+    }
+
+    main figure div:nth-child(4) a {
+        background: url(../img/for768/rome768.png);
+    }
+
+    main figure div:nth-child(5) a {
+        background: url(../img/for768/island768.png);
+    }
+
+    main figure div:nth-child(6) a {
+        background: url(../img/for768/penguins768.png);
+    }
+
+    main figure div:nth-child(7) a {
+        background: url(../img/for768/bridge768.png);
+    }
+
+    main figure div:nth-child(8) a {
+        background: url(../img/for768/eifel768.png);
+    }
+
+    main figure div a::before {
+        background: url(../img/for768/shadow768.png);
+        position: absolute;
+        width: 331px;
+        height: 177px;
+        content: '';
+        visibility: hidden;
+    }
+
+
+    main figure div:hover a::before {
+        visibility: visible;
+    }
+
+
+    main figure div a::after {
+        background: url(../img/for768/icon768.png);
+        content: '';
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        left: 149px;
+        top: 70px;
+        visibility: hidden;
+    }
+    
+    main figure div:hover a::after {
+        visibility: visible;
+    }
+
+
+    /* ______________FOOTER___________ */
+
+    footer nav.list {
+        width: 768px;
+    }
+
+    footer nav.list ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        line-height: 30px;
+        margin: 30px 80px 50px 20px;
+    }
+
+    footer nav.list ul li {
+        margin: 0 30px;
+        font-family: 'open sans';
+        color: white;
+        text-transform: uppercase;
+    }
+
+    footer nav.list ul li a {
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    footer nav ul li address {
+        font: 12px arial;
+        font-weight: 100;
+        text-transform: lowercase;
+    }
+
+    footer nav.social-links {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    footer nav.social-links ul.buttons {
+        justify-content: center;
+
+    }
+
+    footer nav.social-links address {
+        font-size: 12px;
+        font-family: arial;
+        margin: 0 auto;
+        margin-bottom: 44px;
+    }
+
+    footer nav.social-links ul.buttons li {
+        margin: 20px 5px;
+
+    }
+
+    /* ___to top button____ */
+
+    .to-top {
+        bottom: 288px;
+        margin-left: 730px;
+        border-radius: 50px;
+    }
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+}
